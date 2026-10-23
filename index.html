@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe: Capa de Red (Modelo OSI)</title>
+    <!-- Vinculación con el archivo CSS separado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- PÁGINA 1: PORTADA -->
+    <div class="page portada">
+        
+        <!-- ENCABEZADO CON LOGO A LA IZQUIERDA Y TEXTO ALINEADO -->
+        <table class="tabla-encabezado">
+            <tr>
+                <td class="col-logo">
+                    <img src="logo-unefa.png" alt="Logo UNEFA" class="logo-unefa">
+                </td>
+                <td class="col-institucion">
+                    República Bolivariana de Venezuela<br>
+                    Ministerio del Poder Popular para la Defensa<br>
+                    Universidad Nacional Experimental Politécnica de la<br>
+                    Fuerza Armada Nacional Bolivariana<br>
+                    UNEFA – Núcleo Guárico<br>
+                    Ingeniería de Sistemas 
+                </td>
+            </tr>
+        </table>
+
+        <div class="titulo-principal">
+            <span class="sub-etiqueta">INFORME TÉCNICO</span>
+            <h1>LA CAPA DE RED<br><span class="modelo-texto">(MODELO OSI)</span></h1>
+        </div>
+
+        <div class="datos-pie">
+            <div class="profesor">
+                <span class="etiqueta-rol">PROFESOR:</span><br>
+                <strong>Raúl Blanco</strong>
+            </div>
+            <div class="bachiller">
+                <span class="etiqueta-rol">BACHILLER:</span><br>
+                <strong>Luigui Lara</strong><br>
+                <span class="cedula">V-29.945.875</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PÁGINA 2: CONTENIDO DEL INFORME -->
+    <div class="page contenido">
+        <h2>1. ¿Qué es la Capa de Red?</h2>
+        <p>
+            La <strong>Capa de Red</strong> es la tercera capa del modelo OSI. Su función principal es permitir que los datos viajen de una red a otra completamente diferente. Mientras que la capa anterior (Enlace de Datos) solo conecta equipos que están en la misma red local, la Capa de Red hace posible la comunicación global entre distintas redes.
+        </p>
+
+        <div class="analogia-box">
+            <strong>Explicación sencilla (El GPS del envío):</strong><br>
+            Si la red local es tu vecindario, la Capa de Red funciona como el sistema de GPS y las carreteras principales que guían un paquete de una ciudad a otra hasta llegar a la dirección exacta de destino en cualquier parte del mundo.
+        </div>
+
+        <h2>2. Funciones Principales</h2>
+        <p>Para cumplir con su objetivo, esta capa realiza tres tareas clave:</p>
+        
+        <ul>
+            <li><strong>Direccionamiento Lógico (Dirección IP):</strong> Asigna una dirección única a cada dispositivo (como una dirección IP) para poder identificarlo sin importar en qué parte del planeta esté conectado.</li>
+            <li><strong>Enrutamiento (Routing):</strong> Busca y selecciona el camino más rápido y seguro por el cual deben viajar los datos a través de las diferentes redes.</li>
+            <li><strong>Manejo de Paquetes:</strong> Organiza la información en bloques llamados <em>paquetes</em> para que puedan transportarse con mayor facilidad.</li>
+        </ul>
+
+        <h2>3. Conceptos Clave</h2>
+        <p>Los dos elementos principales que maneja esta capa son:</p>
+        <ul>
+            <li><strong>Paquete de Datos:</strong> Es el mensaje fragmentado que lleva incorporada la dirección IP de origen y la de destino.</li>
+            <li><strong>Dirección IP:</strong> El número lógico de identificación que tiene cada dispositivo conectado a una red o a Internet.</li>
+        </ul>
+
+        <h2>4. Dispositivo Principal: El Router</h2>
+        <p>
+            El equipo estrella de esta capa es el <strong>Router (Enrutador)</strong>. A diferencia de un switch que solo conecta computadoras de una misma red local, el router se encarga de conectar redes distintas (por ejemplo, une la red de tu hogar con el proveedor de Internet global), leyendo las direcciones IP y decidiendo hacia dónde enviar cada paquete.
+        </p>
+
+        <h2>5. Conclusión</h2>
+        <p>
+            En resumen, la Capa de Red es la encargada de hacer posible Internet. Gracias al uso de las direcciones IP y al trabajo de los routers, la información puede viajar por diferentes caminos y llegar de manera segura a su destino final sin importar la distancia.
+        </p>
+    </div>
+
+</body>
+</html>

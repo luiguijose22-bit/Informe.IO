@@ -1,0 +1,214 @@
+/* Importación opcional de tipografías profesionales */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@500;600;700;800&display=swap');
+
+/* Estilos generales con paleta Granate / Vino Tinto & Ámbar */
+body {
+    font-family: 'Merriweather', 'Times New Roman', Times, serif;
+    background-color: #1e1114; /* Fondo café/granate oscuro */
+    margin: 0;
+    padding: 25px 10px;
+    color: #2b1e1e;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Formato Hoja A4 Profesional */
+.page {
+    background-color: #ffffff;
+    width: 210mm;
+    min-height: 297mm;
+    padding: 25mm 22mm 22mm 22mm;
+    margin: 0 auto 35px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+/* --- PORTADA PROFESIONAL --- */
+.portada {
+    justify-content: space-between;
+}
+
+/* Encabezado */
+.tabla-encabezado {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 2px solid #800020; /* Granate / Vino tinto fino */
+    padding-bottom: 12px;
+}
+
+.col-logo {
+    width: 85px;
+    vertical-align: middle;
+    padding-right: 15px;
+    padding-bottom: 8px;
+}
+
+.logo-unefa {
+    width: 75px;
+    height: auto;
+    display: block;
+}
+
+.col-institucion {
+    font-family: 'Montserrat', Arial, sans-serif;
+    vertical-align: middle;
+    font-size: 12.5px;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #800020; /* Tono institucional granate */
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+}
+
+/* Título */
+.titulo-principal {
+    margin: auto 0;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.sub-etiqueta {
+    font-family: 'Montserrat', Arial, sans-serif;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #b45309; /* Ámbar/Dorado elegante */
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.titulo-principal h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin: 0;
+    color: #58111a; /* Borgoña/Vino tinto oscuro */
+}
+
+.modelo-texto {
+    font-size: 18.5px;
+    color: #a21caf; /* Acento magenta/carmesí profundo */
+    font-weight: 700;
+}
+
+/* Pie de Portada */
+.datos-pie {
+    font-family: 'Montserrat', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13.5px;
+    line-height: 1.6;
+    margin-bottom: 15mm;
+    border-top: 1.5px solid #d97706; /* Línea dorada */
+    padding-top: 18px;
+}
+
+.etiqueta-rol {
+    color: #6b7280;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.datos-pie .profesor {
+    text-align: left;
+    width: 50%;
+    color: #58111a;
+}
+
+.datos-pie .bachiller {
+    text-align: right;
+    width: 50%;
+    color: #58111a;
+}
+
+.cedula {
+    color: #4b5563;
+    font-size: 12.5px;
+    font-weight: 500;
+}
+
+/* --- CONTENIDO GENERAL --- */
+.contenido {
+    font-size: 14.5px;
+    line-height: 1.75;
+    text-align: justify;
+    color: #374151;
+}
+
+h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #58111a;
+    border-bottom: 2px solid #9f1239; /* Borde carmesí resplandeciente */
+    padding-bottom: 6px;
+    margin-top: 28px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 14px;
+    text-indent: 28px;
+}
+
+ul {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    padding-left: 32px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+li strong {
+    color: #111827;
+}
+
+.analogia-box {
+    background-color: #fff1f2; /* Fondo rosa cálido muy suave */
+    border-left: 4px solid #be123c; /* Borde carmesí fuerte */
+    border-radius: 0 4px 4px 0;
+    padding: 15px 20px;
+    margin: 22px 0;
+    font-style: italic;
+    color: #881337;
+    box-shadow: 0 2px 5px rgba(190, 18, 60, 0.05);
+}
+
+.analogia-box strong {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-style: normal;
+    font-size: 13.5px;
+    color: #9f1239;
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* Ajustes de Impresión / Exportación a PDF */
+@media print {
+    body {
+        background: none;
+        padding: 0;
+    }
+    .page {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        page-break-after: always;
+    }
+}
